@@ -1,53 +1,46 @@
+@font-face {
+  font-family: 'NanumSquareNeo-Variable';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KBO-Dia-Gothic_bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KBO-Dia-Gothic_bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --orange: #F5D0A9;
+}
+
+/* ---------------------------------------------------------------------------- */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'NanumSquareNeo-Variable', sans-serif;
+  text-decoration: none;
 }
 
-.test,
-.lookbook,
-.products,
-.sign-up {
+.home,
+.dash,
+.signup {
   display: flex;
-  height: 90vh;
+  min-height: calc(100vh - 80px);
   align-items: center;
   justify-content: center;
-  font-size: 3rem;
 }
 
-.test {
-  background-image: url('/public/images/img-1.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
-}
 
-.lookbook {
-  background-image: url('/public/images/img-2.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
-}
-
-.products {
-  background-image: url('/public/images/img-3.jpg');
-  background-position: center;
-  background-size: fill;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
-}
-
-.sign-up {
+.signup {
   background-image: url('/public/images/img-4.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  color: #fff;
+  color: var(--white);
   font-size: 100px;
 }

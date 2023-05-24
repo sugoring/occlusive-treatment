@@ -1,0 +1,60 @@
+.navbar-container {
+  background: var(--orange);
+  height: 80px;
+  padding: 0 4rem 0 4rem; /* 좌우 여백 */
+
+  display: flex;
+  align-items: center; /* 수직 정렬*/
+
+  position: sticky; /* 고정 */
+  top: 0; /* 고정 */
+  z-index: 999; /* front */
+}
+
+/* ---------------------------------------------------------------------------- */
+.navbar-item-logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+
+  color: var(--white);
+  font-size: 3rem;
+  font-family: "KBO-Dia-Gothic_bold", sans-serif;
+}
+
+.navbar-item-signup {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* ---------------------------------------------------------------------------- */
+.footer-container {
+  background-color: var(--orange);
+  height: 120px;
+  padding: 0 4rem 0 4rem; /* 좌우 여백 */
+
+  display: flex;
+  align-items: center; /* 수직 정렬*/
+
+  position: sticky;
+}
+
+/* ---------------------------------------------------------------------------- */
+.footer-item-logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+
+  color: var(--white);
+  font-size: 2rem;
+  font-family: "KBO-Dia-Gothic_bold", sans-serif;
+}
+
+.footer-item-rights {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+
+  color: var(--white);
+}
