@@ -1,13 +1,16 @@
-import React from 'react';
-import '../../App.css';
+import React from "react";
+import "../../App.css";
 
-function SignUp() {
+
+import { Link } from "react-router-dom";
+import { Button } from "../elements/Button";
+
+export default function SignUp() {
   return (
     <>
-      <div className='signup'>
-      </div>;
+      <div className="signup">
+
+      </div>
     </>
   );
 }
-
-export default SignUp;

@@ -1,46 +1,119 @@
 @font-face {
-  font-family: 'NanumSquareNeo-Variable';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+  font-family: "NanumSquareNeo-Variable";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'KBO-Dia-Gothic_bold';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KBO-Dia-Gothic_bold.woff') format('woff');
+  font-family: "KBO-Dia-Gothic_bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KBO-Dia-Gothic_bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 
 :root {
   --white: #ffffff;
-  --black: #000000;
-  --orange: #F5D0A9;
+  /* var(--white); */
+  --black: #434954;
+  /* var(--black); */
+  --orangelight: #F8ECE7;
+  /* var(--orangelight); */
+  --orange: #EED1C5;
+  /* var(--orange); */
 }
 
 /* ---------------------------------------------------------------------------- */
 * {
   margin: 0;
   padding: 0;
-  font-family: 'NanumSquareNeo-Variable', sans-serif;
+
+  border: 0.1vw solid var(--black);
+
+  overflow: hidden;
+  /* 스크롤바를 숨기는 속성 */
+
+  font-family: "NanumSquareNeo-Variable", sans-serif;
+  color: var(--black);
   text-decoration: none;
+
+  font-size: 1vw;
 }
 
-.home,
-.dash,
-.signup {
+/* ---------------------------------------------------------------------------- */
+.app-container {
+  height: 100vh;
+  width: 100vw;
+
+  background: linear-gradient(to bottom, #FEE1B8, #DA9C85);
   display: flex;
-  min-height: calc(100vh - 80px);
   align-items: center;
   justify-content: center;
 }
 
+.app-itmes {
+  height: 90vh;
+  width: 90vw;
 
+  background: var(--white);
+  border-radius: 2.5vw;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  /* Adding a shadow effect */
+
+  display: flex;
+  align-items: center;
+
+  flex-direction: column;
+  /* 위에서 아래로 정렬 */
+}
+
+/* ---------------------------------------------------------------------------- */
+.home,
+.dash,
 .signup {
-  background-image: url('/public/images/img-4.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: var(--white);
-  font-size: 100px;
+  height: 87%;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+  /* 위에서 아래로 정렬 */
+}
+
+.home {
+  width: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+  /* 위에서 아래로 정렬 */
+}
+
+/* ---------------------------------------------------------------------------- */
+.flex-item-1 {
+  flex: 1;
+}
+
+.flex-item-3 {
+  flex: 3;
+}
+
+.flex-item-7 {
+  flex: 7;
+}
+
+.flex-item-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-item-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }

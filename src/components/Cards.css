@@ -1,61 +1,50 @@
-.cards {
-  padding: 4rem; /* 내부 여백 */
-  background: #fff; /* 배경색 */
-}
-
 .cards-container {
-  display: flex; /* 컨테이너를 유연한 박스 형태로 설정 */
-  flex-flow: row wrap; /* 요소들을 가로로 나열하고 필요에 따라 여러 줄로 강제 줄바꿈 */
-  align-items: flex-start; /* 요소들을 수직 방향으로 상단 정렬 */
-  width: 100%; /* 너비를 100%로 설정 */
-  margin: 0 auto; /* 좌우 여백을 0으로 설정하고 수평 가운데 정렬 */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.cards-items {
-  margin-bottom: 24px;
+ul {
+  height: 100%;
+  overflow-y: scroll; /* 스크롤 활성화 */
+  scrollbar-width: 0.5vw; /* 스크롤 바 너비 설정 (Firefox) */
 }
+
+ul::-webkit-scrollbar {
+  width: 0.5vw; /* 스크롤 바 너비 설정 (Chrome, Safari, Opera) */
+}
+
+ul::-webkit-scrollbar-thumb {
+  background-color: var(--orange); /* 스크롤 바 썸 색상 설정 */
+  border-radius: 1vw; /* 스크롤 바 썸 둥근 모서리 설정 */
+}
+
+ul::-webkit-scrollbar-track {
+  background-color: transparent; /* 스크롤 바 트랙 색상 설정 */
+}
+
 
 /* CardItem ---------------------------------------------------------------------------- */
-
 .cardsitem-container {
+  height: 3vw;
+  width: 40vw;
+
   display: flex;
-  flex-flow: row;
-  margin: 0 1rem;
-  border-radius: 10px;
-  width: 100%;
-  box-shadow: 0 6px 20px rgba(64, 20, 75, 0.17);
-  -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
-  filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
-  border-radius: 10px;
-  overflow: hidden;
-  text-decoration: none;
-  flex-direction: row;
   align-items: center;
-  width: 100%;
-  gap: 10px; /* 각 아이템 사이의 간격 설정 */
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 100%;
-  gap: 10px; /* 각 아이템 사이의 간격 설정 */
+  /* 수직 정렬*/
+
+  transition: all 0.3s ease;
 }
 
-.cardsitem__img {
-  display: block;
-  width: 100px;
-  height: 100px;
+.cardsitem-items-img {
+  width: 2.5vw;
+  height: 2.5vw;
+  border-radius: 50%;
   object-fit: cover;
-  transition: all 0.2s linear;
+
 }
 
-.cardsitem__img:hover {
-  transform: scale(1.1);
-}
-
-.cardsitem__name,
-.cardsitem__text {
-  display: block;
-  color: #252e48;
-  font-size: 18px;
-  line-height: 24px;
+.cardsitem-container:hover {
+  transform: scale(1.02);
 }
