@@ -45,6 +45,12 @@ ul::-webkit-scrollbar-track {
 
 }
 
+.cardsitem-container:hover .cardsitem-items-name,
+.cardsitem-container:hover .cardsitem-items-data,
+.cardsitem-container:hover .cardsitem-items-dataresult {
+  color: var(--orange);
+}
+
 .cardsitem-container:hover {
   transform: scale(1.02);
 }

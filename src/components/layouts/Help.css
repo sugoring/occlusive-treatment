@@ -1,0 +1,28 @@
+.help-container {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    /* 세로 방향 상단 정렬 */
+    justify-content: center;
+    ;
+    /* 가로 방향 우측 정렬 */
+}
+
+/* ---------------------------------------------------------------------------- */
+.help-items {
+    width: 3vw;
+    /* 요소의 가로 크기 */
+    height: 3vw;
+    /* 요소의 세로 크기 */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2vw;
+    font-family: "KBO-Dia-Gothic_bold", sans-serif;
+    color: var(--orange);
+    border-radius: 50vw;
+    background-color: var(--orangelight);
+}

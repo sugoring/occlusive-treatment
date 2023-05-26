@@ -2,6 +2,7 @@ import React from "react";
 import "../../App.css";
 
 import Search from "../Search";
+import Set from "../Set";
 import Cards from "../Cards";
 
 export default function Home() {
@@ -11,13 +12,9 @@ export default function Home() {
 
         <div className="flex-item-1"></div>
 
-        <div className="flex-item-1">
-          <div className="flex-item-center">
-            <Search />
-          </div>
-        </div>
+        <div className="flex-item-1"> <Search /></div>
 
-        <div className="flex-item-1"></div>
+        <div className="flex-item-1"><Set /></div>
 
         <div className="flex-item-7"><Cards /></div>
 

@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 
 import Navbar from "./components/layouts/Navbar";
+import Help from "./components/layouts/Help";
+
 import Home from "./components/pages/Home";
 import Dash from "./components/pages/Dash";
 import SignUp from "./components/pages/SignUp";
@@ -19,6 +21,7 @@ function App() {
               <Route path="/dash" element={<Dash />} />
               <Route path="/signup" element={<SignUp />} />
             </Routes>
+            <Help />
           </div>
         </div>
       </Router>

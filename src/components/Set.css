@@ -1,0 +1,19 @@
+.set-container {
+    width: 40vw;
+
+    display: flex;
+}
+
+
+.set-items,
+.set-items-icons {
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.set-items-icons {
+    font-size: 2vw;
+
+    display: flex;
+    justify-content: flex-end;
+}
