@@ -1,14 +1,14 @@
 import React from "react";
 import "../../App.css";
 
-import Login from "../Login";
+import Auth from "../Auth";
 
 
 export default function SignUp() {
   return (
     <>
       <div className="signup">
-        <Login />
+        <Auth />
 
       </div>
     </>

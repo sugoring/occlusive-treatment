@@ -5,7 +5,7 @@ function Search() {
   return (
     <>
       <div className="search-container">
-        <input className="search-input" type="text" placeholder="Search" />
+        <input className="search-items-input" type="text" placeholder="Search" />
       </div>
     </>
   );

@@ -7,8 +7,12 @@
 
 .set-items,
 .set-items-icons {
-    margin-left: 1vw;
-    margin-right: 1vw;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .set-items-icons {
@@ -16,4 +20,23 @@
 
     display: flex;
     justify-content: flex-end;
+}
+
+.set-items-slider {
+    background: var(--orangelight);
+    width: 2.5vw;
+    height: 2.5vh;
+    margin-left: 0.5vw; /* 왼쪽 마진 값 설정 */
+
+    border-radius: 3vw;
+    -webkit-appearance: none;
+}
+
+.set-items-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 2.5vh; /* 더 큰 원형의 thumb를 만들기 위해 width를 높였습니다. */
+    height: 2.5vh; /* 더 큰 원형의 thumb를 만들기 위해 height를 높였습니다. */
+    background: var(--orange);
+    border-radius: 50vw;
 }

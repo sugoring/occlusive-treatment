@@ -16,6 +16,8 @@
     height: 3vw;
     /* 요소의 세로 크기 */
 
+    margin-right: 0.5vw;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,3 +28,14 @@
     border-radius: 50vw;
     background-color: var(--orangelight);
 }
+
+.help-items:hover {
+    cursor: pointer;
+    animation: blink 0.5s;
+  }
+  
+  @keyframes blink {
+    70% {
+      opacity: 0;
+    }
+  }

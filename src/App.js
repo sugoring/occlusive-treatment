@@ -2,30 +2,31 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 
-import Navbar from "./components/layouts/Navbar";
-import Help from "./components/layouts/Help";
+import { AuthProvider } from "./components/AuthContext";
 
+import Navbar from "./components/layouts/Navbar";
 import Home from "./components/pages/Home";
 import Dash from "./components/pages/Dash";
 import SignUp from "./components/pages/SignUp";
+import Help from "./components/layouts/Help";
 
 function App() {
   return (
-    <>
-      <Router>
-        <div className="app-container">
-          <div className="app-itmes">
+    <div className="app-container">
+      <div className="app-itmes">
+        <AuthProvider>
+          <Router>
             <Navbar />
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path="/" element={<SignUp />} />
+              <Route path="/home" element={<Home />} />
               <Route path="/dash" element={<Dash />} />
-              <Route path="/signup" element={<SignUp />} />
             </Routes>
             <Help />
-          </div>
-        </div>
-      </Router>
-    </>
+          </Router>
+        </AuthProvider>
+      </div>
+    </div>
   );
 }
 

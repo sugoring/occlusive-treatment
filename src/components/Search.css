@@ -5,7 +5,7 @@
     /* 수직 중간 정렬 */
 }
 
-.search-input {
+.search-items-input {
     height: 2.5vw;
     width: 35vw;
 
@@ -27,6 +27,6 @@
     /* 수직 중간 정렬 */
 }
 
-.search-input::placeholder {
+.search-items-input::placeholder {
     color: var(--orange);
 }

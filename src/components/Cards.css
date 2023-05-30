@@ -45,12 +45,45 @@ ul::-webkit-scrollbar-track {
 
 }
 
-.cardsitem-container:hover .cardsitem-items-name,
-.cardsitem-container:hover .cardsitem-items-data,
-.cardsitem-container:hover .cardsitem-items-dataresult {
-  color: var(--orange);
-}
-
 .cardsitem-container:hover {
   transform: scale(1.02);
+}
+
+/* ---------------------------------------------------------------------------- */
+/* Add this CSS code to your stylesheet */
+
+.cardsitem-items-data.green {
+  color: #00E545;
+}
+
+.cardsitem-items-data.yellow {
+  color: #FFD36E;
+}
+
+.cardsitem-items-data.red {
+  color: #FF2525;
+}
+
+.cardsitem-items-dataresult.green {
+  width: 1.5vw;
+  height: 1.5vw;
+  color: transparent;
+  background-color: #00E545;
+  border-radius: 50%;
+}
+
+.cardsitem-items-dataresult.yellow {
+  width: 1.5vw;
+  height: 1.5vw;
+  color: transparent;
+  background-color: #FFD36E;
+  border-radius: 50%;
+}
+
+.cardsitem-items-dataresult.red {
+  width: 1.5vw;
+  height: 1.5vw;
+  color: transparent;
+  background-color: #FF2525;
+  border-radius: 50%;
 }
