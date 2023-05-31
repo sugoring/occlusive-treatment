@@ -1,24 +1,21 @@
 import React from "react";
 import "../../App.css";
 
-import Search from "../Search";
-import Set from "../Set";
-import Cards from "../Cards";
+import ListSearch from "../ListSearch";
+import ListSet from "../ListSet";
+import List from "../List";
 
 export default function Home() {
   return (
     <div className="home">
       <div className="flex-item-1"></div>
       <div className="flex-item-1">
-        <Search />
+        <ListSearch />
       </div>
       <div className="flex-item-1">
-        <Set>
-          <Cards />
-        </Set>
+        <ListSet/>
       </div>
-      <div className="flex-item-7">
-        <Cards />
+      <div className="flex-item-7"> <List />
       </div>
       <div className="flex-item-1"></div>
     </div>

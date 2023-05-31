@@ -1,7 +1,7 @@
 import React from "react";
-import "./Search.css";
+import "./ListSearch.css";
 
-function Search() {
+function ListSearch() {
   return (
     <>
       <div className="search-container">
@@ -11,4 +11,4 @@ function Search() {
   );
 }
 
-export default Search;
+export default ListSearch;

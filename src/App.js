@@ -21,6 +21,7 @@ function App() {
               <Route path="/" element={<SignUp />} />
               <Route path="/home" element={<Home />} />
               <Route path="/dash" element={<Dash />} />
+              <Route path="/dash/:index" element={<Dash />} />
             </Routes>
             <Help />
           </Router>

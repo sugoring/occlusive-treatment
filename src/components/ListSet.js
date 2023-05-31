@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./Set.css";
+import "./ListSet.css";
 
-function Set() {
+function ListSet() {
   const [sliderValue, setSliderValue] = useState(0); // 순응도 슬라이더 값 상태 추가
 
   const handleSliderChange = (event) => {
@@ -10,15 +10,13 @@ function Set() {
 
   return (
     <div className="set-container">
-      <div className="set-items-icons">
-        <i className="fas fa-bars fa-xs"></i>
-      </div>
-      <div className="set-items-icons">
-        <i className="fas fa-bell fa-xs"></i>
-      </div>
-      <div className="set-items-icons">
-        <i className="fas fa-cog fa-xs"></i>
-      </div>
+      <button className="set-items-icons"><i className="fas fa-bars fa-xs"></i></button>
+
+      <button className="set-items-icons"><i className="fas fa-bell fa-xs"></i></button>
+
+      <button className="set-items-icons"><i className="fas fa-cog fa-xs"></i></button>
+
+
       <div className="set-items">
         순응도
         <input
@@ -26,7 +24,7 @@ function Set() {
           type="range"
           min="0"
           max="1"
-          step="0.01"
+          step="1"
           value={sliderValue} // 슬라이더 값 연결
           onChange={handleSliderChange} // 슬라이더 값 변경 이벤트 핸들러 추가
         />
@@ -35,4 +33,4 @@ function Set() {
   );
 }
 
-export default Set;
+export default ListSet;

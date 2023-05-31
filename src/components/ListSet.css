@@ -1,10 +1,9 @@
 .set-container {
     width: 40vw;
-
     display: flex;
 }
 
-
+/* ---------------------------------------------------------------------------- */
 .set-items,
 .set-items-icons {
     margin-left: 0.5vw;
@@ -18,25 +17,33 @@
 .set-items-icons {
     font-size: 2vw;
 
-    display: flex;
-    justify-content: flex-end;
+    background: none;
+    border: none;
+    outline: none;
+
+    cursor: pointer;
 }
 
+/* ---------------------------------------------------------------------------- */
 .set-items-slider {
-    background: var(--orangelight);
     width: 2.5vw;
     height: 2.5vh;
-    margin-left: 0.5vw; /* 왼쪽 마진 값 설정 */
+    margin-left: 0.5vw;
+    /* 왼쪽 마진 값 설정 */
+
+    background: var(--orangelight);
 
     border-radius: 3vw;
     -webkit-appearance: none;
 }
 
 .set-items-slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 2.5vh; /* 더 큰 원형의 thumb를 만들기 위해 width를 높였습니다. */
-    height: 2.5vh; /* 더 큰 원형의 thumb를 만들기 위해 height를 높였습니다. */
+    width: 2.5vh;
+    height: 2.5vh;
+
     background: var(--orange);
     border-radius: 50vw;
+
+    -webkit-appearance: none;
+    appearance: none;
 }
